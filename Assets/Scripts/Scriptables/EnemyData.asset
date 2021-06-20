@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38c920d6b445cca4b8865fd443899204, type: 3}
+  m_Name: EnemyData
+  m_EditorClassIdentifier: 
+  Bird:
+  - Name: Bird1
+    Speed: 2.6
+    Scale: 0.27
+    ChoiceOfTheCollier: 1
+    Sprite: {fileID: 21300000, guid: 9220715e3d66d1648a7dc410876981d4, type: 3}
+    AllSprites:
+    - {fileID: 21300000, guid: 9220715e3d66d1648a7dc410876981d4, type: 3}
+    - {fileID: 21300000, guid: f030e3e122554554d9834a32537ea7e0, type: 3}
+    - {fileID: 21300000, guid: 9b94a659249451b4b845aa88a3711ef9, type: 3}
+  - Name: Bird2
+    Speed: 2.4
+    Scale: 0.27
+    ChoiceOfTheCollier: 1
+    Sprite: {fileID: 21300000, guid: e358147458629a5429baede598a558d4, type: 3}
+    AllSprites:
+    - {fileID: 21300000, guid: e358147458629a5429baede598a558d4, type: 3}
+    - {fileID: 21300000, guid: d05dab1ce8423a34fbfc1c21f88c6569, type: 3}
+    - {fileID: 21300000, guid: a3cb7bc717ddcd149b1a9cb4d1cdbe63, type: 3}
+  - Name: Bird3
+    Speed: 3.8
+    Scale: 0.3
+    ChoiceOfTheCollier: 1
+    Sprite: {fileID: 21300000, guid: 46dca8a6886d7784cb477b4eac0ffa2a, type: 3}
+    AllSprites:
+    - {fileID: 21300000, guid: 46dca8a6886d7784cb477b4eac0ffa2a, type: 3}
+    - {fileID: 21300000, guid: 3bc40bcd647c69443bfc295e9206c5a5, type: 3}
+    - {fileID: 21300000, guid: 6b3655fa80680794c92b34cfe3a46e27, type: 3}
+  - Name: Bird4
+    Speed: 3.1
+    Scale: 0.27
+    ChoiceOfTheCollier: 1
+    Sprite: {fileID: 21300000, guid: f1eeb0d4bf3cf5143af67b5b305795e5, type: 3}
+    AllSprites:
+    - {fileID: 21300000, guid: f1eeb0d4bf3cf5143af67b5b305795e5, type: 3}
+    - {fileID: 21300000, guid: ab15860a1b3c32f4baf74fdfaffa189d, type: 3}
+    - {fileID: 21300000, guid: 6409d9f9a5f29584baa88a357a07ff68, type: 3}
+  - Name: Bird6
+    Speed: 4
+    Scale: 0.1
+    ChoiceOfTheCollier: 0
+    Sprite: {fileID: 21300000, guid: 9067e1b47232c7349b10a203ead6a988, type: 3}
+    AllSprites:
+    - {fileID: 21300000, guid: 9067e1b47232c7349b10a203ead6a988, type: 3}
+    - {fileID: 21300000, guid: 2730159e1e9f8614dba59b77597b8159, type: 3}
+    - {fileID: 21300000, guid: 25ffdbe61de09ce499fdcfc36426e8eb, type: 3}
+  - Name: Bird7
+    Speed: 2.8
+    Scale: 0.1
+    ChoiceOfTheCollier: 0
+    Sprite: {fileID: 21300000, guid: cb1f667266f124a49abf3a3b3eab1cc0, type: 3}
+    AllSprites:
+    - {fileID: 21300000, guid: cb1f667266f124a49abf3a3b3eab1cc0, type: 3}
+    - {fileID: 21300000, guid: ce836c92cb54b6f428fb7eb8e31ffc21, type: 3}
+  - Name: Bird8
+    Speed: 4
+    Scale: 0.1
+    ChoiceOfTheCollier: 1
+    Sprite: {fileID: 21300000, guid: 43f8d08d81145d246b43ad143ca87c66, type: 3}
+    AllSprites:
+    - {fileID: 21300000, guid: 43f8d08d81145d246b43ad143ca87c66, type: 3}
+    - {fileID: 21300000, guid: 60cb79b615342974dbf51d266412961e, type: 3}
+    - {fileID: 21300000, guid: 945bfe4b13007cf47aa813058d7bb923, type: 3}
+  - Name: Bird10
+    Speed: 4.3
+    Scale: 0.1
+    ChoiceOfTheCollier: 1
+    Sprite: {fileID: 21300000, guid: fc2100d3de1fc6a478d4f45b6d55cdee, type: 3}
+    AllSprites:
+    - {fileID: 21300000, guid: fc2100d3de1fc6a478d4f45b6d55cdee, type: 3}
+    - {fileID: 21300000, guid: e73438987ff77c64dbd565c7ddd775f9, type: 3}
+  BirdsLastSpawn: 3
