@@ -55,22 +55,12 @@ namespace Scripts.Services
             if (_secure.Coin > 0) 
             {
                 _secure.CoinUpdate();
-                GetAchivAndUpdateLeaderBoard.LoadCoinsInGPS(_secure.Coin);
             } 
             else 
             {
                 _secure.CoinUpdate();
             }
             ChangeCoinsEvent?.Invoke(_secure.Coin);
-            _loseStrik++;
-            if (_loseStrik > 4) 
-            {
-                if (PlayerPrefsSafe.GetInt("ADS") != 1)
-                {
-                    AdsLoader.ShowAds();   
-                }
-                _loseStrik = 0;
-            }
             SaveRecord(_spawner.Record);
         }
 
@@ -102,7 +92,6 @@ namespace Scripts.Services
             else 
             {
                 MusicEvent?.Invoke(MusicEvents.AllEvents.coinTake);
-                new GetAchivAndUpdateLeaderBoard(newRecord);
                 _txtRecord.text = ("Your new Record\n" + newRecord);
                 _txtGameName.text = "Game Over";
                 PlayerPrefsSafe.SetInt("savescore", newRecord);

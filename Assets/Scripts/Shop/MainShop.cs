@@ -5,7 +5,6 @@ using System;
 using System.Collections.Generic;
 using Scripts.Secure;
 using Scripts.Services;
-using Scripts.Shop;
 
 namespace Scripts.Payes
 {
@@ -45,16 +44,6 @@ namespace Scripts.Payes
                     }
                 }
             }
-        }
-
-        private void OnEnable()
-        {
-            Purchases.PayBirdEvent += PayBird;
-        }
-
-        private void OnDisable()
-        {
-            Purchases.PayBirdEvent -= PayBird;
         }
 
         public void OpenAndCloseShop(bool open) 

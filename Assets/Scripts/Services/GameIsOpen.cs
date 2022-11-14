@@ -1,7 +1,4 @@
-﻿using GooglePlayGames;
-using System;
-using System.Text;
-using Scripts.Secure;
+﻿using Scripts.Secure;
 using TMPro;
 using UnityEngine;
 
@@ -9,7 +6,6 @@ namespace Scripts.Services
 {
     class GameIsOpen : MonoBehaviour
     {
-        [SerializeField] private GameObject _buttonLeaderBoard;
         [SerializeField] private TextMeshProUGUI _txtRecord, _txtCoinsInMenu;
         
         private WorkWithCoinsAndCout _secureCoin;
@@ -26,25 +22,6 @@ namespace Scripts.Services
             LoadRecord();
             LoadCoins();
             _loadSelectBird.LoadSave();
-           PlayGamesPlatform.Activate();
-           Social.localUser.Authenticate((bool success) =>
-           {
-               if (success)
-               {
-                   _buttonLeaderBoard.SetActive(true);
-               }
-           });
-           if (PlayerPrefsSafe.GetInt("ADS") != 1)
-           {
-               if (AdsLoader.BannerActive != true)
-               {
-                   AdsLoader.LoadBaner();
-               }
-               else
-               {
-                   AdsLoader.Banner.Show();
-               }
-           }
         }
 
         private void LoadRecord()
